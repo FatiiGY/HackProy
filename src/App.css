@@ -2,18 +2,100 @@
   text-align: center;
 }
 
-.App-header {
-  background-color: red;
-  padding: 20px;
-}
-
 .banner {
+  background-color: #EB0029;
   display: flex;
   align-items: center;
 }
 
-.image {
-  width: 30px;
-  height: 60px;
-  margin-right: 10px;
+.logo {
+  height: 35px;
+  margin-left: 70px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.image-container {
+  margin-top: 50px;
+}
+
+.circle {
+  margin-left: 250px;
+  width: 500px;
+  height: 500px;
+  background: #5b6670;
+  border-radius: 40%;
+  animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.text-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.center-container {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.tit {
+  font-family: "Gotham", sans-serif;
+  text-align: center;
+  font-size: 100px;
+  margin-bottom: 25px;
+}
+
+.subti {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-size: 35px;
+  margin-top: 0;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  
+}
+
+.left-button {
+  font-family: "Gotham Medium", sans-serif;
+  font-size: 20px;
+  width: 150px;
+  height: 45px;
+  color: #ffffff;
+  background-color: #eb0029;
+  border: none;
+  border-radius: 4px;
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+.left-button:hover {
+  background-color: #db0026;
+}
+
+.right-button {
+  font-family: "Gotham Medium", sans-serif;
+  font-size: 20px;
+  width: 150px;
+  color: #323E48;
 }
